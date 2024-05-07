@@ -1,4 +1,4 @@
-# Did this code successfully run on Leetcode : Couldn't find the same problem in Leetcode. But a similar problem was solved (Stack using Linked List) and run. This exercise was run successfully in the local compiler
+# Did this code successfully run on Leetcode : Yes
 # Any problem you faced while coding this : No
 class myStack:
   #Please read sample.java file before starting.
