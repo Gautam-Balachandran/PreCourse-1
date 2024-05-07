@@ -2,19 +2,39 @@ class myStack:
   #Please read sample.java file before starting.
   #Kindly include Time and Space complexity at top of each file
      def __init__(self):
+         self.stack = []
          
      def isEmpty(self):
+         # Check if the stack is empty
+        return len(self.stack) == 0
          
      def push(self, item):
+         # Add an item to the top of the stack
+        self.stack.append(item)
          
      def pop(self):
-        
+        # Remove and return the top item from the stack
+        if not self.isEmpty():
+            return self.stack.pop()
+        else:
+            print("Stack is empty")
+            return None
         
      def peek(self):
+         # Return the top item without removing it
+        if not self.isEmpty():
+            return self.stack[-1]
+        else:
+            print("Stack is empty")
+            return None
         
      def size(self):
+         # Return the number of elements in the stack
+        return len(self.stack)
          
      def show(self):
+         # Display all elements in the stack
+        return self.stack
          
 
 s = myStack()
